@@ -221,10 +221,9 @@ public class Oauth2ImpersonationTestCase extends OAuth2ServiceAbstractIntegratio
 
         scim2RestClient.closeHttpClient();
         orgMgtRestClient.closeHttpClient();
-        httpClientWithoutAutoRedirections.close();
         restClient.closeHttpClient();
+        httpClientWithoutAutoRedirections.close();
         client.close();
-
     }
 
     @Test(groups = "wso2.is", description = "Send authorize user request with impersonation related response types " +
